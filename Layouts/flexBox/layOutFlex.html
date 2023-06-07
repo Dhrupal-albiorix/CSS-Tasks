@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <header>This is header</header>
+        </div>
+
+        <div class="main">
+           
+                <div class="side1">Aside 1</div>
+
+                <div class="middle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dicta nulla sit fuga corrupti hic quae quidem, ut animi, 
+                    vero soluta itaque saepe omnis!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Neque, repellendus perferendis optio est nemo nostrum? Doloremque 
+                    quidem debitis ratione nulla fuga minus expedita obcaecati et? 
+                    Aut sequi ex unde dicta amet ducimus animi quaerat, repudiandae 
+                    beatae exercitationem ad reprehenderit explicabo officiis repellendus, 
+                    consequuntur rem?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dicta nulla sit fuga corrupti hic quae quidem, ut animi, 
+                    vero soluta itaque saepe omnis!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Neque, repellendus perferendis optio est nemo nostrum? Doloremque 
+                    quidem debitis ratione nulla fuga minus expedita obcaecati et? 
+                    Aut sequi ex unde dicta amet ducimus animi quaerat, repudiandae 
+                    beatae exercitationem ad reprehenderit explicabo officiis repellendus, 
+                    consequuntur rem?
+                </div>
+
+                <div class="side2">Aside 2</div>
+            
+        </div>
+
+        <div class="footer">
+            this is footer section
+        </div>
+
+    </div>
+</body>
+</html>
+
+<style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.header ,.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: orange;
+    text-transform: capitalize;
+    font-size: larger;
+}
+.main{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.side1{
+    width: 20%;
+    background-color: yellow;
+    text-align: center;
+}
+
+.middle{
+    background-color: aqua;
+    padding: 15px;
+    font-size: large;
+    width: 60%;
+}
+
+.side2{
+    width: 20%;
+    background-color: palevioletred;
+    text-align: center;
+}
+
+.footer{
+    background-color: greenyellow;
+}
+
+</style>

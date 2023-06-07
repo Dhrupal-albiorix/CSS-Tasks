@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">CONVERSE CHUCK TAYLOR ALL STAR LOW TOP</div>
+
+        <div class="main">
+
+            <div class="image">
+                <img class="img" src="https://www.kasandbox.org/programming-images/avatars/leaf-green.png"
+                    alt="not there">
+            </div>
+
+            <div class="centerInfo">
+                <div class="fristpart">
+                    <p class="price">$65.00</p>
+                    <p class="free"> Free shipping</p>
+                </div>
+                <div class="mainCenter">
+                    <p class="pera"> Ready to dress up or down, these classic canvas Chucks
+                        are an everyday wardrobe staple.</p>
+                    <a href="#">More information →</a>
+                </div>
+                <div class="endOfCente">
+                    <div class="color one"></div>
+                    <div class="color two"></div>
+                    <div class="color three"></div>
+                    <div class="color four"></div>
+                </div>
+            </div>
+
+            <dl class="endOfCenterlast">
+                <dt class="detail">PRODUCT DETAILS</dt>
+                <li class="listItem">Lightweight, durable canvas sneaker</li>
+                <li class="listItem">Lightly padded footbed for added comfort</li>
+                <li class="listItem">Iconic Chuck Taylor ankle patch.</li>
+            </dl>
+
+        </div>
+
+        <div class="footer">ADD TO CART</div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    .container {
+        border: 3px solid black;
+        margin: 60px;
+        display: grid;
+        height: 100%;
+        grid-template-rows: 0.5fr 1.5fr 0.5fr;
+    }
+
+    .header,
+    .footer {
+        text-align: center;
+        padding: 10px;
+        font-weight: bolder;
+        text-transform: capitalize;
+        font-size: larger;
+    }
+
+    .main {
+        display: grid;
+        align-content: flex-start;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: stretch;
+        width: 100%;
+        gap: 20px;
+        /* border: 2px solid rgb(255, 72, 0); */
+    }
+
+    .centerInfo {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .fristpart {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .price {
+        font-size: 28px;
+        font-weight: bolder;
+    }
+
+    .free {
+        font-size: 14px;
+        color: rgb(104, 100, 100);
+        text-align: end;
+    }
+
+    .mainCenter {
+        line-height: 20px;
+    }
+
+
+    .endOfCenterlast {
+        line-height: 40px;
+    }
+
+    .listItem {
+        list-style-type: square;
+    }
+
+    .endOfCente{
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        justify-content: center;
+        align-content: center;
+    }
+
+    .color {
+        width: 30px;
+        height: 30px;
+    }
+
+    .one {
+        background-color: black;
+    }
+
+    .two {
+        background-color: green;
+    }
+
+    .three {
+        background-color: blue;
+    }
+
+    .four {
+        background-color: aqua;
+    }
+
+    /* .endOfCenterlast {
+        border: 2px solid rgb(208, 255, 0);
+    } */
+
+    .detail{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .footer {
+        background-color: black;
+        color: aliceblue;
+        border-top: 3px solid black;
+    }
+
+    .footer:hover {
+        background-color: white;
+        color: black;
+    }
+</style>

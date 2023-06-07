@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+  <div class="box1">One</div>
+  <div class="box2">Two</div>
+  <div class="box3">Three</div>
+  <div class="box4">Four</div>
+</div>
+
+</body>
+</html>
+
+<style>
+
+    .wrapper{
+        display: grid;
+        gap: 10px;
+    }
+    
+    .box1 {
+        /* shorthend */
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  background-color: black;
+  color: aliceblue;
+}
+
+
+.box2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: black;
+  color: aliceblue;
+  
+}
+.box3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: black;
+  color: aliceblue;
+  
+}
+.box4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: black;
+  color: aliceblue;
+  
+}
+
+</style>

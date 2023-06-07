@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridLineNaming</title>
+</head>
+
+<body>
+
+    <p>refer to hard copy</p>
+
+    <div class="gridContainer">
+        <div class="gridItem header">Naming Grid Lines : Header</div>
+        <div class="gridItem headerInfo">Grid lines can be named when defining the grid with the
+            rid-template-rows and grid-template-columns properties - HeaderInfo </div>
+        <div class="gridItem one">Line names can then be referenced to position grid items.</div>
+        <div class="gridItem two">grid item</div>
+        <div class="gridItem three">grid item</div>
+        <div class="gridItem four">grid item 4</div>
+        <div class="gridItem five">grid item 5</div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    .gridContainer {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: [main-start] 1fr [content-start] 1fr [content-end] 1fr [main-end];
+    }
+
+    .gridItem {
+        background-color: black;
+        color: aliceblue;
+    }
+
+    .header{
+        grid-column-start: content-start;
+        grid-column-end: main-end;
+        
+    }
+
+    .headerInfo{
+        grid-column-start:main-start;
+        grid-column-end: main-end;
+    }
+
+    .four , .five{
+        grid-column-start: content-start;
+        grid-column-end: content-end;
+    }
+
+</style>

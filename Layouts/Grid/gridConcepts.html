@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="gridConcepts">
+        <div class="one gridBox">BOne</div>
+        <div class="TWO gridBox">BTWO</div>
+        <div class="Three gridBox">BThree</div>
+        <div class="Four gridBox">BFour</div>
+        <div class="Five gridBox">BFive</div>
+    </div>
+<br><br>
+    <div class="frAndMinmax">
+        <div class="minMaxFr one">minMax & Fr-one</div>
+        <div class="minMaxFr two">minMax & Fr-two</div>
+        <div class="minMaxFr three">minMax & Fr-three</div>
+    </div>
+    
+</body>
+</html>
+
+<style>
+
+/*
+In this example, the second column take 60px of the avaiable 
+100px so the first and third columns split the remaining available 
+40px into two parts (`1fr` = 50% or 20px)
+*/
+
+/* .grid {
+  display: grid;
+  width: 100px;
+  grid-template-columns: 1fr 60px 1fr;
+} */
+
+/* // The distance between rows is 20px
+// The distance between columns is 10px
+display:block pervents from applying grid-gap
+#grid-container {
+  display: grid;
+  grid-gap: 20px 10px;
+} */
+
+
+ .gridConcepts{
+     display: grid;
+     width: 950px;
+  /* grid-template-columns: auto auto auto auto; */
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-columns: 260px; */
+  /* grid-template-columns: 180px 130px 93px; */
+  grid-template-columns: 1fr 160px 1fr;
+  grid-gap: 20px 10px;
+   /* grid-row: 3 / span 3; read from hard copy notes */
+ }
+
+  .gridBox{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    border: 12px solid rgba(255, 255, 255, 0.304);
+  }
+
+
+  .frAndMinmax{
+       display: grid;
+       grid-template-columns: minmax(500px , 700px) 2fr 1fr;
+  }
+
+  .minMaxFr{
+    background-color: blueviolet;
+    color: antiquewhite;
+    padding: 20px;
+    border: 12px solid antiquewhite;
+  }
+  
+
+
+
+</style>

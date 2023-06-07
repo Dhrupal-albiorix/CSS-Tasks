@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="repeatGrid">
+        <div class="repeatGridItem">Define repeating grid tracks using the repeat() notation.</div>
+        <div class="repeatGridItem">This is useful for grids with items with equal sizes or many items.</div>
+        <div class="repeatGridItem2">grid item</div>
+        <div class="repeatGridItem">grid item</div>
+        <div class="repeatGridItem">grid item</div>
+        <div class="repeatGridItem">grid item</div>
+        <div class="repeatGridItem">grid item</div>
+        <div class="repeatGridItem">grid item</div>
+        <div class="repeatGridItem">grid item</div>
+        <div class="repeatGridItem">grid item</div>
+        <div class="repeatGridItem">grid item</div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    .repeatGrid {
+        display: grid;
+        grid-template-columns: 130px repeat(5, 1fr) 130px;
+        gap: 10px;
+    }
+
+    .repeatGridItem {
+        background-color: rgba(0, 0, 0, 0.447);
+    }
+
+    .repeatGridItem2 ::after {
+           background-color: rgba(0, 0, 0, 0.447);
+        margin-right: 2rem;
+    }
+</style>

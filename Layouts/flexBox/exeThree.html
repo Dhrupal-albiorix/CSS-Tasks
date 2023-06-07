@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">CONVERSE CHUCK TAYLOR ALL STAR LOW TOP</div>
+
+        <div class="main">
+
+            <div class="image">
+               <img class="img" src="https://www.kasandbox.org/programming-images/avatars/leaf-green.png" alt="not there">
+            </div>
+
+            <div class="centerInfo">
+                <div class="fristpart">
+                    <p class="price">$65.00</p>
+                    <p class="free"> Free shipping</p>
+                </div>
+                <div class="mainCenter">
+                    <p>Ready to dress up or down, these classic canvas Chucks 
+                        are an everyday wardrobe staple.</p>
+                        <a href="#">More information →</a>
+                </div>
+                <div class="endOfCente">
+                   <div class="color one"></div>
+                   <div class="color two"></div>
+                   <div class="color three"></div>
+                   <div class="color four"></div>
+                </div>
+            </div>
+
+                <dl class="endOfCenterlast">
+                <dt>PRODUCT DETAILS</dt>
+                <li class="listItem">Lightweight, durable canvas sneaker</li>
+                <li class="listItem">Lightly padded footbed for added comfort</li>
+                <li class="listItem">Iconic Chuck Taylor ankle patch.</li>
+                </dl>
+
+        </div>
+
+        <div class="footer">ADD TO CART</div>
+    </div>
+</body>
+</html>
+
+<style>
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+     border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+}
+.header , .footer{
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: larger;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.image{
+    border: 2px solid rgb(208, 255, 0);
+    width: 30%;
+}
+
+
+
+.centerInfo{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fristpart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.free{
+    font-size: 14px;
+    color: rgb(104, 100, 100);
+}
+
+.endOfCente{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.color{
+    width: 30px;
+    height: 30px;
+}
+
+.one{
+    background-color: black;
+}
+
+.two{
+    background-color: green;
+}
+
+.three{
+    background-color: blue;
+}
+
+.four{
+    background-color: aqua;
+}
+
+.endOfCenterlast{
+    line-height: 40px;
+}
+
+.listItem{
+    list-style-type: square;
+}
+
+.footer{
+    background-color: black;
+    color: aliceblue;
+    border-top: 3px solid black;
+}
+
+.footer:hover{
+    background-color: white;
+    color: black;
+}
+
+</style>

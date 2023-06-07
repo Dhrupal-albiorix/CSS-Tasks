@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://learncssgrid.com/">Source</a>
+<br><br>
+    <div class="gridperent1">
+        <div class="childgrid gridDisplay">grid templet column</div>
+        <div class="childgrid gridDisplay">grid templet column</div>
+        <div class="childgrid gridDisplay">grid templet column</div>
+        <div class="childgrid gridDisplay">grid templet column</div>
+        <div class="childgrid gridDisplay">grid templet column</div>
+        <div class="childgrid gridDisplay">grid templet column</div>
+        <div class="childgrid gridDisplay">grid templet column</div>
+    </div>
+<br>
+    <div class="gridperent2">
+        <div class="childgrid gridInkineDisplay">grid templet row</div>
+        <div class="childgrid gridInkineDisplay">grid templet row</div>
+        <div class="childgrid gridInkineDisplay">grid templet row</div>
+        <div class="childgrid gridInkineDisplay">grid templet row</div>
+        <div class="childgrid gridInkineDisplay">grid templet row</div>
+        <div class="childgrid gridInkineDisplay">grid templet row</div>
+        <div class="childgrid gridInkineDisplay">grid templet row</div>
+    </div>
+<br> <br>
+    <div class="gridFr">
+        <div class="gridItem">fr unit helps create flexible grid tracks</div>
+        <div class="gridItem">fr unit helps create flexible grid tracks</div>
+        <div class="gridItem">fr unit helps create flexible grid tracks</div>
+        <div class="gridItem">fr unit helps create flexible grid tracks</div>
+        <div class="gridItem">fr unit helps create flexible grid tracks</div>
+    </div>
+
+    <br><br>
+
+    <div class="gridMinmax">
+        <div class="minMaxGridItem">The minmax() function accepts 2 arguments:</div>
+        <div class="minMaxGridItem">the first is the minimum size of the track and the second the maximum size.</div>
+        <div class="minMaxGridItem">minmax() function</div>
+        <div class="minMaxGridItem">minmax() function</div>
+        <div class="minMaxGridItem">minmax() function</div>
+    </div>
+
+</body>
+</html>
+
+<style>
+
+      .gridDisplay{
+        background-color: red;
+    }
+
+     .gridInkineDisplay{
+        background-color: rgba(255, 0, 0, 0.461);
+    }
+
+    .gridperent1{
+        display: grid;
+        grid-template-columns: 170px 90px 130px;
+        gap: 10px;
+    }
+
+    .gridperent2{
+        display: grid;
+        grid-template-rows: 20px 80px;
+        gap: 20px;
+    }
+
+    .gridFr{
+         display: grid;
+         grid-template-columns:1fr 5fr;
+         gap: 10px; 
+    }
+
+    .gridItem{
+        background-color: rgba(0, 0, 0, 0.447);
+    }
+
+    .gridMinmax{
+         display: grid;
+         grid-template-columns : minmax(2%, 1fr) 3fr 1fr;
+         gap: 10px;
+    }
+
+    .minMaxGridItem{
+        background-color: rgba(221, 92, 92, 0.447);
+    }
+
+</style>
